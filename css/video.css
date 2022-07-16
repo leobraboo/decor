@@ -1,0 +1,121 @@
+@charset "UTF-8";
+:root {
+  
+  --bs-primary: #2a5555;
+  --bs-secondary: #6c757d;
+  --bs-primary-rgb: 42, 85, 85;
+  --bs-secondary-rgb: 108, 117, 125;
+  --bs-body-color-rgb: 0, 0, 0;
+  --bs-body-bg-rgb: 255, 255, 255;
+   --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+  --bs-body-color: #000000;
+  --bs-body-bg: #fff;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  position: relative;
+}
+
+.social-icons {
+  position: relative;
+  z-index: 2;
+  
+}
+
+@media (min-width: 992px) {
+  .social-icons {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0.5rem;
+    width: auto;
+  }
+}
+  video.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 0;
+  }
+  
+@media(max-width:900px){
+  .bg-video{
+    height: 100vh;
+  }
+}
+
+
+  @media (pointer: coarse) and (hover: none) {
+    body {
+      background-size: cover;
+    }
+  }
+  .videologo {
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .videologo .videologofilho {
+    position: relative;
+    max-width: 40rem;
+  }
+  .videologo .videologofilho h1, .videologo .videologofilho .h1 {
+    font-size: 2.5rem;
+  }
+  .videologo .videologofilho p {
+    font-size: 1.2rem;
+  }
+  .videologo .videologofilho p strong {
+    font-weight: 700;
+  }
+  .videologo .videologofilho .input-group-newsletter input {
+    height: auto;
+    width: 100%;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  .videologo .videologofilho .input-group-newsletter button {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: calc(1rem + 2px);
+  }
+  
+  @media (min-width: 992px) {
+    .videologo {
+      height: 100%;
+      width: 75vw;
+      min-height: 0;
+      padding-bottom: 0;
+    }
+
+    }
+    .videologo .videologofilho {
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: 2rem;
+      padding-right: 9rem;
+    }
+    .videologo .videologofilho h1, .videologo .videologofilho .h1 {
+      font-size: 8.5rem;
+    }
+    .videologo .videologofilho p {
+      font-size: 1.3rem;
+    }
+  
+
