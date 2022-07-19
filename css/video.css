@@ -29,6 +29,31 @@ body {
   
 }
 
+@media (min-width:320px) and (max-width:992px) {
+  .bg-video{
+    display: none;
+    
+  }
+
+  .fundo{
+    opacity: 0;
+  }
+
+  #mainNav{
+    background:none;
+  }
+
+  .videologo{
+    display: flex;
+    background: url(../assets/img/icone.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+  }
+}
+
 @media (min-width: 992px) {
   .social-icons {
     position: absolute;
@@ -36,6 +61,7 @@ body {
     top: 0;
     right: 0.5rem;
     width: auto;
+    border-radius: 40rem;
   }
 }
   video.bg-video {
