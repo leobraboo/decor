@@ -29,7 +29,7 @@ body {
   
 }
 
-@media (min-width:320px) and (max-width:992px) {
+@media (min-width:730px) and (max-width:992px) {
   .bg-video{
     display: none;
     
@@ -49,9 +49,35 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100%;
     width: 100%;
   }
+}
+
+@media (min-width:320px) and (max-width:729px){
+  .videologo{
+    display: flex;
+    background: url(../assets/img/icone.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50%;
+    width: 100%;
+  }
+
+  .bg-video{
+    display: none;
+    
+  }
+
+  .fundo{
+    opacity: 0;
+  }
+
+  #mainNav{
+    background:none;
+  }
+
 }
 
 @media (min-width: 992px) {
